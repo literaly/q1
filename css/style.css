@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+*{margin: 0; padding: 0; font-family: 'Roboto Condensed', sans-serif}
+
+.item_hide{display: none;}
+
+
+header{background: #fff;width: 100%;display: flex; justify-content: space-around; align-items: center; padding: 10px 0px; line-height: 30px; position: fixed;}
+
+header #logo h4{font-size: 1.2em; letter-spacing: 3px;}
+header #logo p{letter-spacing: 2px;}
+header nav ul{display: flex; list-style-type: none;}
+header nav ul li{margin-left: 30px;}
+header nav ul li a{color: #555; text-decoration: none;}
+header nav ul li a:hover{color: #04B4AE}
+
+@media screen and (max-device-width: 970px) {
+	header{justify-content: flex-start;}
+	header{flex-direction: column;}
+	header #logo{ padding:1% 2%;width: 96%; display: flex; flex-direction:  column;}
+	header nav ul{flex-direction: column; padding-top: 30px;}
+	header nav ul li{margin-bottom: 10px}
+	header nav ul li a{font-size: 1.1em;}
+	.item_hide{display: block; position: absolute; right: 20px; top: 30px; width: 30px; height: 30px;}
+}
+
+#banner{width: 100%; height: 800px; background: url('../img/3.jpg'); background-size: cover; background-attachment: fixed; display: flex; justify-content: center; align-items: center; flex-direction: column;}
+#banner p{font-size: 1.5em; letter-spacing: 3px;}
+#banner h1{font-size: 6em; letter-spacing: 30px; font-family: 'Roboto', sans-serif; padding: 20px 0px;}
+#banner input[type="submit"]{font-size: 1.2em; padding: 7px 20px; background: #111; outline: none; border: none; color: #fff;}
+
+
+@media screen and (max-device-width: 970px) {
+	#banner{max-width: 100%;width: 100%;height: 600px; text-align: center; width: 96; padding: 0 2%;}
+	#banner p{font-size: 1em; letter-spacing: 3px;}
+	#banner h1{font-size: 3em; letter-spacing: 10px; font-family: 'Roboto', sans-serif; padding: 20px 0px;}
+	#banner input[type="submit"]{font-size: 1.2em; padding: 7px 20px; background: #111; outline: none; border: none; color: #fff;}
+
+}
+
+#about{width: 100%; display: flex;}
+#about #inf{;width: 40%; margin-left: 10%; padding: 0px 5%; margin-top: 100px;}
+#about #inf hr{margin-bottom: 30px; width: 50px; height: 3px; border: none; background: #111; color: #111;}
+#about #inf h1{font-size: 2.5em; line-height: 48px; letter-spacing: 7px; font-family: 'Roboto', sans-serif; margin-bottom: 50px}
+#about #inf p{font-size: 1.2em; line-height: 28px; margin-bottom: 30px;}
+#about #inf a{display: block; margin-bottom: 50px; padding: 7px 20px; background: #111; text-decoration: none;color: #fff; width: 120px; text-align: center; font-size: 1.2em;}
+
+#about #img{width: 50%; background: silver; background: url('https://cdn.sela.ru/wa-data/public/shop/products/26/00/100026/images/11091/11091.366x488.jpg') no-repeat;  background-size: cover; background-position-y: 0%}
+
+
+
+@media screen and (max-device-width: 970px) {
+	#about{flex-direction: column;}
+	#about #inf{width: 80%; padding: 5%; margin: 0px;}
+	#about #inf hr{margin-top: 30px;}
+	#img{display: none;}
+
+}
+
+#services{width: 80%; padding: 100px 10%; background: url('https://storge.pic2.me/upload/472/59ee6ff184652.jpg'); background-size: cover; background-attachment: fixed;}
+#services ul{list-style-type: none; display: flex; justify-content: center;}
+#services ul li{margin-left: 20px; font-size: 1.2em; padding: 10px 0px;}
+#services ul li:hover{padding: 8px 0px;border-bottom: 2px solid #04B4AE;}
+
+.srv_11, .srv_12{display: flex; justify-content: center; margin-top: 30px}
+.item_srv{padding: 5%; background: #fff;  margin-left: 30px; text-align: center; width: 25%}
+.item_srv h1{font-size: 1.2em; font-family: 'Roboto', sans-serif;}
+.item_srv p{margin: 20px 0px; font-size: 1em; }
+.item_srv a{text-decoration: none; color: #fff; padding: 7px 20px; background: #111;}
+
+
+.tab {overflow: hidden;display: flex;justify-content: center;}
+.tab button {background-color: inherit;float: left;border: none;outline: none;cursor: pointer;padding: 14px 16px;transition: 0.3s;font-size: 1.2em}
+.tab button:hover {}
+.tab button.active {border-bottom: 1px solid #04B4AE;}
+.tabcontent {display: none;padding: 6px 0px;border-top: none;}
+
+@media screen and (max-device-width: 970px) {
+	#services{width: 90%; margin:0 auto;}
+	.srv_11, .srv_12{flex-direction: column;}
+	.item_srv{width: 80%; margin-bottom: 10px;}
+
+}
+
+#nnn{width: 100%; ; margin-top: 300px}
+
+#feedback{width: 100%; height: auto; padding: 50px 0; display: flex; background: #56bcc0;}
+#feedback_inf{width: 30%; padding-left: 20%;}
+
+#feedback_inf hr{margin-bottom: 30px; width: 50px; height: 3px; border: none; background: #111; color: #111;}
+#feedback_inf h1{font-family: 'Roboto', sans-serif; font-size: 1.5em; letter-spacing: 2px;}
+#feedback_inf p{font-size: 1.2em; letter-spacing: 1px;}
+#feedback_inf p:nth-child(3){padding: 20px 0;}
+#feedback_inf p:nth-child(6){padding: 20px 0;}
+#feedback_inf ul{list-style-type: none; display: flex;}
+#feedback_inf ul li{margin-right: 15px;}
+
+#feedback_form{width: 40%; padding-right: 10%;}
+#feedback_form form{display: flex; flex-direction: column; justify-content: flex-end;}
+#feedback_form input{margin-bottom: 5px; height: 35px; padding:0 30px; font-size: 1.1em; border:none; outline: none;}
+#feedback_form textarea{padding:10px 30px; margin-bottom: 5px; font-size: 1.1em; line-height: 27px; border: none; outline: none;}
+
+#feedback_form input[type="submit"]{width: 40%; background: #111; color: #fff}
+
+
+@media screen and (max-device-width: 970px) {
+	#feedback{flex-direction: column; width: 110%;}
+	#feedback_inf{padding-left: 10%; width: 90%; margin-bottom: 50px;}
+	#feedback_form{width: 90%; justify-content: center; padding: 0 5%;}
+}
+
+footer{padding: 30px 10% 30px 20%; background: #56bcc0; display: flex; justify-content: space-between;}
+footer img{width: 40px; height: 40px;}
